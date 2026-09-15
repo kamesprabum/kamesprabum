@@ -1,0 +1,48 @@
+name: Update Profile Contribution Art
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # Runs daily at 06:00 UTC
+  workflow_dispatch:      # Allows manual trigger from GitHub Actions UI
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/fetch_contributions.py"
+      - "scripts/render_heatmap_svg.py"
+      - ".github/workflows/update-profile-art.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-heatmap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Fetch live contribution data
+        run: |
+          python scripts/fetch_contributions.py
+        env:
+          GH_PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Render animated contribution heatmap SVG
+        run: |
+          python scripts/render_heatmap_svg.py
+
+      - name: Commit updated contribution graph
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh contribution graph [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg"

@@ -1,0 +1,9 @@
+# Daily automation dependencies (lightweight)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Image / ASCII generation dependencies (local run)
+pillow>=10.0.0
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+rembg>=2.0.50

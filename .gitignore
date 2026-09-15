@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Source photos & intermediate image files (private assets)
+source-photo.jpg
+source-photo.jpeg
+source-photo.png
+source-prepped.png
+*.jpg
+*.jpeg
+*.png

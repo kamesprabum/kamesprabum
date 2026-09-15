@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 440" width="370" height="440">
+  <defs>
+    <style>
+      @keyframes wipeIn {
+        0% {
+          clip-path: inset(0 100% 0 0);
+          opacity: 0.1;
+        }
+        1% {
+          opacity: 1;
+        }
+        100% {
+          clip-path: inset(0 0 0 0);
+          opacity: 1;
+        }
+      }
+      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 8px; }
+      .titlebar { fill: #161b22; }
+      .titlebar-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #7d8590; font-weight: 500; }
+      .ascii-font {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 8.6px;
+        fill: #e6edf3;
+        white-space: pre;
+        letter-spacing: 0.2px;
+      }
+      .row {
+        animation: wipeIn 0.08s ease-out forwards;
+        clip-path: inset(0 100% 0 0);
+      }
+      .status-text {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 11px;
+        fill: #7d8590;
+      }
+      .status-active {
+        fill: #39d353;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="370" height="440" />
+
+  <!-- Title bar -->
+  <path d="M 0,8 Q 0,0 8,0 L 362,0 Q 370,0 370,8 L 370,34 L 0,34 Z" fill="#161b22" stroke="#30363d" stroke-width="1px" />
+  <circle cx="16" cy="17" r="5" fill="#ff5f56" />
+  <circle cx="30" cy="17" r="5" fill="#ffbd2e" />
+  <circle cx="44" cy="17" r="5" fill="#27c93f" />
+  <text class="titlebar-text" x="60" y="21">portrait.ascii</text>
+
+  <!-- ASCII Art Rows -->
+  <g>
+    <g class="row" style="animation-delay: 0.0s;"><text x="16" y="60.0" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.065s;"><text x="16" y="69.8" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.13s;"><text x="16" y="79.6" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;:```:-:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.195s;"><text x="16" y="89.4" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;:+*ss#ccssc*+-+-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.26s;"><text x="16" y="99.2" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;+s#s*+*c**cscssssc+=:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.325s;"><text x="16" y="109.0" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`c#sc*css#sss#s#%##sc#s:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.39s;"><text x="16" y="118.8" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`css##s+cs#s##%%#%%%%#s*`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.455s;"><text x="16" y="128.6" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;*####s##cssc#%#s#%%@%%#*`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.52s;"><text x="16" y="138.4" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;-%%%%#scc*---::-++cs#%%c&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.585s;"><text x="16" y="148.2" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#ss%ss*+-&#160;&#160;&#160;&#160;&#160;`:-=+c#%+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.65s;"><text x="16" y="158.0" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;+##sc*+=-`&#160;&#160;&#160;&#160;&#160;-=+cc##&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.715s;"><text x="16" y="167.8" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;##csss##%s=-*s#ss%ss=&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.78s;"><text x="16" y="177.6" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;=cs*+c*c-=s*-%c-sc#c*+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.845s;"><text x="16" y="187.4" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`==s*=:`&#160;&#160;-*-&#160;+*::--=+*-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.91s;"><text x="16" y="197.2" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;==sc+=:&#160;&#160;:*=:+*&#160;&#160;`=***:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 0.975s;"><text x="16" y="207.0" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;:=s%*+=:&#160;=sc*#s=:=*cs+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.04s;"><text x="16" y="216.8" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;:%s***s#c=-+c#scc#=&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.105s;"><text x="16" y="226.6" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;=%sc*+=====***s#*&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.17s;"><text x="16" y="236.4" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#%#s*=-::=+*s%%-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.235s;"><text x="16" y="246.2" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**s#%%#sss##%%%++c`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.3s;"><text x="16" y="256.0" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`-+*s*&#160;++*s##%%%%#s=&#160;=##scc+-`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.365s;"><text x="16" y="265.8" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;-+*ss##%%*&#160;&#160;:=+++**c*-&#160;&#160;&#160;=s#ssssssc*+=:`&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.43s;"><text x="16" y="275.6" class="ascii-font">&#160;&#160;&#160;&#160;&#160;&#160;:=*cs####ss##%s:&#160;&#160;&#160;`-===-&#160;&#160;&#160;&#160;&#160;*s#sssccsss###ssc+-`&#160;&#160;</text></g> <g class="row" style="animation-delay: 1.495s;"><text x="16" y="285.4" class="ascii-font">&#160;:=*ss####ssssss#s#%#*&#160;&#160;&#160;&#160;`-==&#160;&#160;&#160;&#160;&#160;=sssscsccssssssss###sc*</text></g> <g class="row" style="animation-delay: 1.56s;"><text x="16" y="295.2" class="ascii-font">s####sssssssss###ss#s#=&#160;`cc***cc=&#160;`ssssssscccsssssssssssss</text></g> <g class="row" style="animation-delay: 1.625s;"><text x="16" y="305.0" class="ascii-font">sssssccssscss##scssss#s`+#%*+cs=:`*#sccssccccsssscccccccsc</text></g> <g class="row" style="animation-delay: 1.69s;"><text x="16" y="314.8" class="ascii-font">ssccccccccs##sccscccss#=&#160;&#160;ss*#:&#160;&#160;:sssccccsscssscccccccccsc</text></g> <g class="row" style="animation-delay: 1.755s;"><text x="16" y="324.6" class="ascii-font">scsccccccssscccc#ccccssc&#160;`s*+s=&#160;&#160;+#ssccccssccccccccccc*sc*</text></g> <g class="row" style="animation-delay: 1.82s;"><text x="16" y="334.4" class="ascii-font">s*sscccccssccccs##*ccccs--#+=+s=&#160;ssscccccccssccccccccccs**</text></g> <g class="row" style="animation-delay: 1.885s;"><text x="16" y="344.2" class="ascii-font">#c*ssccccccccssss#cccccs*=c+--+**sscsccscccccssscccc*c#s*s</text></g> <g class="row" style="animation-delay: 1.95s;"><text x="16" y="354.0" class="ascii-font">##cc#sccccssssssscscccccsc++-:-+#sssscsccccccccccc*cc##*cs</text></g> <g class="row" style="animation-delay: 2.015s;"><text x="16" y="363.8" class="ascii-font">c##*s#ssssscsssscccsccccss=+-::+#ssscsscc*cc**ccccccs#cssc</text></g> <g class="row" style="animation-delay: 2.08s;"><text x="16" y="373.6" class="ascii-font">ccscc##ssssssccccccsscccss+==::cscscsscscc**ccccsscs%#ssc*</text></g> <g class="row" style="animation-delay: 2.145s;"><text x="16" y="383.4" class="ascii-font">scccc#%sssssssscccccscccssc-=:-ssccc#cccc***ccccsss##ssccs</text></g> <g class="row" style="animation-delay: 2.21s;"><text x="16" y="393.2" class="ascii-font">*ccccs%#sssss#ssccccs#ccsss==`+#ccc##cccc**ccccsss#%%s**c*</text></g> <g class="row" style="animation-delay: 2.275s;"><text x="16" y="403.0" class="ascii-font">***ccs%%#sss##sscccss%#css#*=:c#cc#%ssccccs#ssssss%%#***++</text></g>
+  </g>
+
+  <!-- Footer Status Bar -->
+  <g>
+    <line x1="16" y1="414" x2="354" y2="414" stroke="#30363d" />
+    <text x="16" y="430" class="status-text">[MODE: <tspan class="status-active">ONLINE</tspan>] 58x36 ASCII</text>
+    <text x="294" y="430" class="status-text">100%</text>
+  </g>
+</svg>
