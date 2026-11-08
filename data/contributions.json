@@ -1,43 +1,15 @@
 {
   "username": "kamesprabum",
-  "updated_at": "2026-11-07T11:58:13.976494Z",
-  "total": 80,
-  "current_streak": 53,
-  "longest_streak": 53,
-  "active_days": 62,
+  "updated_at": "2026-11-08T12:17:28.855302Z",
+  "total": 81,
+  "current_streak": 54,
+  "longest_streak": 54,
+  "active_days": 63,
   "best_day": {
     "date": "2026-09-05",
     "count": 7
   },
   "days": [
-    {
-      "date": "2025-11-02",
-      "count": 0
-    },
-    {
-      "date": "2025-11-03",
-      "count": 0
-    },
-    {
-      "date": "2025-11-04",
-      "count": 0
-    },
-    {
-      "date": "2025-11-05",
-      "count": 0
-    },
-    {
-      "date": "2025-11-06",
-      "count": 0
-    },
-    {
-      "date": "2025-11-07",
-      "count": 0
-    },
-    {
-      "date": "2025-11-08",
-      "count": 0
-    },
     {
       "date": "2025-11-09",
       "count": 0
@@ -1492,6 +1464,10 @@
     },
     {
       "date": "2026-11-07",
+      "count": 1
+    },
+    {
+      "date": "2026-11-08",
       "count": 0
     }
   ]
